@@ -43,7 +43,7 @@ async def op(_, m :Message):
         try:
             invite_link = await app.create_chat_invite_link(int(cfg.CHID))
         except:
-            await m.reply("**Make Sure I Am Admin In Your Channel**")
+            await m.reply("**Ara Ara ❤️ Always Make Sure I Am Admin In Your Channel**")
             return 
         key = InlineKeyboardMarkup(
             [[
@@ -55,8 +55,8 @@ async def op(_, m :Message):
         return 
     keyboard = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton("🗯 Channel", url="https://t.me/+0ybPnj46jcQ2N2Jl"),
-            InlineKeyboardButton("💬 Support", url="https://t.me/Weebs_Weekends")
+            InlineKeyboardButton("🗯 Cʜᴀɴɴᴇʟ ", url="https://t.me/+0ybPnj46jcQ2N2Jl"),
+            InlineKeyboardButton("💬 Sᴜᴘᴘᴏʀᴛ ", url="https://t.me/Weebs_Weekends")
         ]]
     )
     add_user(m.from_user.id)
@@ -74,8 +74,8 @@ async def chk(_, cb : CallbackQuery):
         return 
     keyboard = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton("🗯 Channel", url="https://t.me/+0ybPnj46jcQ2N2Jl"),
-            InlineKeyboardButton("💬 Support", url="https://t.me/Weebs_Weekends")
+            InlineKeyboardButton("🗯 Cʜᴀɴɴᴇʟ ", url="https://t.me/+0ybPnj46jcQ2N2Jl"),
+            InlineKeyboardButton("💬 Sᴜᴘᴘᴏʀᴛ ", url="https://t.me/Weebs_Weekends")
         ]]
     )
     add_user(m.from_user.id)
