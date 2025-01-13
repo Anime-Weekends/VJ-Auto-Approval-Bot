@@ -60,7 +60,7 @@ async def op(_, m :Message):
         ]]
     )
     add_user(m.from_user.id)
-    await m.reply_photo("https://envs.sh/Uko.jpg", caption="** Hello {} 🍀\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+    await m.reply_photo("https://envs.sh/Uko.jpg", caption="** Hello {} 🍀\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(m.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -69,7 +69,7 @@ async def chk(_, cb : CallbackQuery):
     try:
         await app.get_chat_member(cfg.CHID, cb.from_user.id)
     except:
-        await cb.answer("❤️ Ara Ara You are not joined my channel first join channel then check again. ❤️", show_alert=True)
+        await cb.answer("<blockquote>❤️ Ara Ara You are not joined my channel first join channel then check again. ❤️</blockquote>", show_alert=True)
         return 
     keyboard = InlineKeyboardMarkup(
         [[
