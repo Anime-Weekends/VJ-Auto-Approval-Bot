@@ -78,7 +78,7 @@ async def chk(_, cb : CallbackQuery):
         ]]
     )
     add_user(m.from_user.id)
-    await cb.edit_text(text="**❤️ Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powered By : @Alisa_Zoe ✨**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+    await cb.edit_text(text="** Hello {} 🍀\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(cb.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
     
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
