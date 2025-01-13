@@ -26,7 +26,7 @@ async def approve(_, m : Message):
     try:
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
-        await app.send_message(kk.id, "**Hello {}!\nWelcome To {}\n\n__Powerd By : @Anime_Weekends**".format(m.from_user.mention, m.chat.title))
+        await app.send_message(kk.id, "**<blockquote>Hello {} ❤</blockquote>\n\nWelcome To {}\n\n__<blockquote>Powerd By : @Anime_Weekends</blockquote>**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -43,7 +43,7 @@ async def op(_, m :Message):
         try:
             invite_link = await app.create_chat_invite_link(int(cfg.CHID))
         except:
-            await m.reply("**Ara Ara ❤️ Always Make Sure I Am Admin In Your Channel**")
+            await m.reply("**<blockquote>Ara Ara ❤️ Always Make Sure I Am Admin In Your Channel</blockquote>**")
             return 
         key = InlineKeyboardMarkup(
             [[
@@ -51,7 +51,7 @@ async def op(_, m :Message):
                 InlineKeyboardButton("❤️ Cʜᴇᴄᴋ Aɢᴀɪɴ  ❤️", callback_data="chk")
             ]]
         ) 
-        await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join My Update Channel To Use Me.If You Joined The Channel Then Click On Check Again Button To Confirm.**", reply_markup=key)
+        await m.reply_text("**<blockquote>⚠️Access Denied!⚠️</blockquote>\n\nPlease Join My Update Channel To Use Me.\n\nIf You Joined The Channel Then Click On Check Again Button To Confirm.**", reply_markup=key)
         return 
     keyboard = InlineKeyboardMarkup(
         [[
