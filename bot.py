@@ -60,7 +60,7 @@ async def op(_, m :Message):
         ]]
     )
     add_user(m.from_user.id)
-    await m.reply_photo("https://envs.sh/Uko.jpg", caption="** Hello {} 🍀\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(m.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
+    await m.reply_photo("https://envs.sh/Uko.jpg", caption="**<blockquote>Hello {} 🍀</blockquote>\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(m.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -78,7 +78,7 @@ async def chk(_, cb : CallbackQuery):
         ]]
     )
     add_user(m.from_user.id)
-    await cb.edit_text(text="** Hello {} 🍀\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(cb.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
+    await cb.edit_text(text="**<blockquote>Hello {} 🍀</blockquote>\n\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(cb.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
     
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -89,17 +89,17 @@ async def dbtool(_, m : Message):
     x = all_groups()
     tot = int(xx + x)
     await m.reply_text(text=f"""
-🍀 Chats Stats 🍀
-✨ Users : `{xx}`
-👥 Groups : `{x}`
-❤️ Total users & groups : `{tot}` """)
+<blockquote>🍀 Chats Stats 🍀</blockquote>
+<blockquote>✨ Users : `{xx}`</blockquote>
+<blockquote>👥 Groups : `{x}`</blockquote>
+<blockquote>❤️ Total users & groups : `{tot}`</blockquote> """)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("bcast") & filters.user(cfg.SUDO))
 async def bcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("<blockquote>`⚡️ Processing...`</blockquote>")
     success = 0
     failed = 0
     deactivated = 0
@@ -124,14 +124,14 @@ async def bcast(_, m : Message):
             print(e)
             failed +=1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"<blockquote expandable>✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.</blockquote>")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast Forward ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("fcast") & filters.user(cfg.SUDO))
 async def fcast(_, m : Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("<blockquote>`⚡️ Processing...`</blockquote>")
     success = 0
     failed = 0
     deactivated = 0
@@ -156,7 +156,7 @@ async def fcast(_, m : Message):
             print(e)
             failed +=1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"<blockquote expandable>✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.</blockquote>")
 
 print("I'm Alive Now!")
 app.run()
