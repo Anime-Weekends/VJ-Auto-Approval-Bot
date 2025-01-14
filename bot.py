@@ -51,7 +51,7 @@ async def op(_, m :Message):
                 InlineKeyboardButton("Rᴇᴛʀʏ ", callback_data="chk")
             ]]
         ) 
-        await m.reply_text("**<blockquote>⚠️ Aᴄᴄᴇss ᴅᴇɴɪᴇᴅ ! ⚠️</blockquote>\n\n<blockquote expandable>Pʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.\ɴ\ɴɪғ ʏᴏᴜ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴄʜᴇᴄᴋ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄᴏɴғɪʀᴍ.</blockquote>**", reply_markup=key)
+        await m.reply_text("**<blockquote>⚠️ Aᴄᴄᴇss ᴅᴇɴɪᴇᴅ ! ⚠️</blockquote>\n\n<blockquote expandable>Pʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.ɪғ ʏᴏᴜ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴄʜᴇᴄᴋ ᴀɢᴀɪɴ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴄᴏɴғɪʀᴍ.</blockquote>**", reply_markup=key)
         return 
     keyboard = InlineKeyboardMarkup(
         [[
