@@ -12,7 +12,7 @@ class Config:
     # Your Force Subscribe Channel Id Below 
     CHID = int(getenv("CHID", "-1002410513772")) # Make Bot Admin In This Channel
     # Admin Or Owner Id Below
-    SUDO = list(map(int, getenv("SUDO", "6266529037").split()))
+    SUDO = list(map(int, getenv("SUDO", "6266529037 5548954124").split()))
     MONGO_URI = getenv("MONGO_URI", "mongodb+srv://jeffysamaweekends:jeffysamaweekends@cluster0.ulyfw.mongodb.net/?retryWrites=true&w=majority")
     
 cfg = Config()
