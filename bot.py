@@ -26,7 +26,7 @@ async def approve(_, m : Message):
     try:
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
-        await app.send_message(kk.id, "**<blockquote>Hello {} ❤</blockquote>\n\nWelcome To {}\n\n__<blockquote>Powerd By : @Anime_Weekends</blockquote>**".format(m.from_user.mention, m.chat.title))
+        await app.send_message(kk.id, "**<blockquote>Hello {} ❤</blockquote>\n\nWelcome To {}\n\n__<blockquote>Powerd By : <a href="https://t.me/EmitingStars_Botz">Eᴍɪᴛɪɴɢ ʙᴏᴛᴢ</a></blockquote>**".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -60,7 +60,7 @@ async def op(_, m :Message):
         ]]
     )
     add_user(m.from_user.id)
-    await m.reply_photo("https://envs.sh/vsJ.jpg", caption="**<blockquote>Hello {} 🍀</blockquote>\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.I can approve users in Groups & Channels Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(m.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
+    await m.reply_photo("https://i.ibb.co/7xvHDXRY/photo-2025-02-13-17-19-31-7470954629090508828.jpg", caption="**<blockquote>Hello {} 🍀</blockquote>\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.I can approve users in Groups & Channels Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : <a href="https://t.me/EmitingStars_Botz">Eᴍɪᴛɪɴɢ ʙᴏᴛᴢ</a> ✨**</blockquote>".format(m.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -78,7 +78,7 @@ async def chk(_, cb : CallbackQuery):
         ]]
     )
     add_user(m.from_user.id)
-    await cb.edit_text(text="**<blockquote>Hello {} 🍀</blockquote>\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : @Alisa_Zoe ✨**</blockquote>".format(cb.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
+    await cb.edit_text(text="**<blockquote>Hello {} 🍀</blockquote>\n<blockquote expandable>I'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups / Channels.Add me to your chat and promote me to admin with add members permission.</blockquote>\n\n__<blockquote>Powered By : <a href="https://t.me/EmitingStars_Botz">Eᴍɪᴛɪɴɢ ʙᴏᴛᴢ</a> ✨**</blockquote>".format(cb.from_user.mention, "https://t.me/+_N_ND3XfOCNhYjI1"), reply_markup=keyboard)
     
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
